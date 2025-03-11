@@ -10,7 +10,7 @@ git clone https://github.com/mdallrabbi/Create-Spotify-Playlist.git
 cd Create-Spotify-Playlist
 ```
 2. Install the dependencies:
-```javascript
+```bash
 npm install
 ```
 ### Configuration
@@ -23,7 +23,7 @@ REDIRECT_URI=http://127.0.0.1:8888/callback
 2. Replace the placeholder values in getAccessToken.mjs with actual clientId, clientSecret, and redirectUri.
 ### Usage
 1. Start the authorization server:
-```javascript
+```bash
 node server.js
 ```
 2. Open the web browser 
@@ -38,7 +38,7 @@ node server.js
 ![From Browser](images/AUTH_CODE_BROWSER.png)
 ![From Terminal](images/AUTH_CODE_TERMINAL.png)
 4. Run the bellow script to get the access token:
-```javascript
+```bash
 node getAccessToken.mjs
 ```
 5. Replace the placeholder ```accessToken``` in tracks.mjs with the access token you received.
@@ -46,7 +46,7 @@ node getAccessToken.mjs
 authorizationCode = 'AQBTOoUA4d-----------PvTloavDZ50pQ'; // Replace the authorization code
 ```
 6. Run the main script to create the playlist:
-```javascript
+```bash
 node tracks.mjs
 ```
 7. Close the browser
@@ -67,8 +67,8 @@ const bands = [
 ```javascript
 const playlistId = await createPlaylist(userId, '**Echoes of the Eternal**', token);
 ```
-### Check which song you listen most
-```javascript
+### Check out the most listened song
+```bash
 node mostListenedSongs.js
 ```
 ### Debugging
