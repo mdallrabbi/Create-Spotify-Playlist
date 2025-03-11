@@ -35,10 +35,8 @@ This will allow to create a Spotify playlist with songs from the PREFFERED BANDS
         https://accounts.spotify.com/authorize?client_id=<CLIENT_SECRET>&response_type=code&redirect_uri=http://127.0.0.1:8888/callback&scope=playlist-modify-private
     ```
 3. After authorizing the application, it will be redirected to the callback URL with an authorization code. This code will be logged in the terminal.
-    ```
-        ![From Browser](AUTH_CODE_BROWSER.png)
-        ![From Terminal](AUTH_CODE_TERMINAL.png)
-    ```
+    ![From Browser](images/AUTH_CODE_BROWSER.png)
+    ![From Terminal](images/AUTH_CODE_TERMINAL.png)
 4. Run the bellow script to get the access token:
     ```node getAccessToken.mjs
     ```
