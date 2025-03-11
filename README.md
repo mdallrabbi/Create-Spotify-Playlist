@@ -1,58 +1,54 @@
 # Spotify Songs Playlist Creator
-This will allows you to create a Spotify playlist with songs from your favorite BANDS using the Spotify Web API.
+This will allow to create a Spotify playlist with songs from the PREFFERED BANDS using the Spotify Web API.
 ## Prerequisites
-- Node.js and npm installed on your machine.
-- A Spotify Developer account and a registered application to get your `clientId` and `clientSecret`.
+- Node.js and npm installed to the machine.
+- A Spotify Developer account and a registered application to get `clientId` and `clientSecret`.
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/spotify-songs.git
-   cd spotify-songs
+        git clone https://github.com/mdallrabbi/Create-Spotify-Playlist.git
+        cd Create-Spotify-Playlist
    ```
 2. Install the dependencies:
     ```bash
-       npm install
+        npm install
     ```
 ## Configuration
-1. Create a .env file in the root directory and add your Spotify credentials:
+1. Create a .env file in the root directory and to store Spotify credentials:
     ```plaintext
-        CLIENT_ID=<YOUR_CLIENT_ID>
-        CLIENT_SECRET=<YOUR_CLIENT_SECRET>
+        CLIENT_ID=<CLIENT_SECRET>
+        CLIENT_SECRET=<CLIENT_SECRET>
         REDIRECT_URI=http://127.0.0.1:8888/callback
     ```
-2. Replace the placeholder values in getAccessToken.mjs with your actual clientId, clientSecret, and redirectUri.
+2. Replace the placeholder values in getAccessToken.mjs with actual clientId, clientSecret, and redirectUri.
 ## Usage
 1. Start the authorization server:
     ```bash
        node server.js
     ```
-2. Open your browser 
+2. Open the web browser 
     ```bash
         google-chrome --no-proxy-server
     ```
 3. navigate to the Spotify authorization URL:
     ```plaintext
-        https://accounts.spotify.com/authorize?client_id=<YOUR_CLIENT_ID>&response_type=code&redirect_uri=http://127.0.0.1:8888/callback&scope=playlist-modify-private
+        https://accounts.spotify.com/authorize?client_id=<CLIENT_SECRET>&response_type=code&redirect_uri=http://127.0.0.1:8888/callback&scope=playlist-modify-private
     ```
-3. After authorizing the application, you will be redirected to the callback URL with an authorization code. This code will be logged in the terminal.
+3. After authorizing the application, it will be redirected to the callback URL with an authorization code. This code will be logged in the terminal.
     ```
-        ![From Browser](image-2.png)
-        ![From Terminal](image-3.png)
+        ![From Browser](AUTH_CODE_BROWSER.png)
+        ![From Terminal](AUTH_CODE_TERMINAL.png)
     ```
-4. Replace the placeholder authorizationCode in getAccessToken.mjs with the code you received.
-    ```
-    ```
-5. Run the script to get the access token:
+4. Run the bellow script to get the access token:
     ```node getAccessToken.mjs
     ```
-6. Replace the placeholder ```accessToken``` in tracks.mjs with the access token you received.
+5. Replace the placeholder ```accessToken``` in tracks.mjs with the access token you received.
     ```plaintext
         authorizationCode = 'AQBTOoUA4d-----------PvTloavDZ50pQ'; // Replace with your authorization code
-    ```
-7. Run the main script to create the playlist:
+6. Run the main script to create the playlist:
     ```node tracks.mjs
     ```
-8. Close the browser
+7. Close the browser
     ```ps aux | grep -E 'apt|dpkg'
        sudo kill -9 <PID>
     ```
