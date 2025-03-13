@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-const accessToken = 'BQAA6mNK9Mqdy7XCqtcxjsQ_dCN3ROPRYc6XuWNJRzksTjOsZGvvkVG84JwdOn1X3cb0i8kmj_0A1VDnayl3tF3XMNX3E-v2svbzXRmYVG6iNfT8BPQ8ZeLgtB2S6U1Vr0ENy0Wmulde8cNatxpydCBAvYOGjBBvNySRZvsGyEkbjnyPoy840F5LxTFGC_Tvqsy9Dx1ZXFfPdos3bThpd154uvsBeSfQdYabz70OLJimDlCHGWOW7xw3BpiduX6k9Sl276GlrZmiJE8SzZmCK0Hz3MCdM_YJiLkiAP3PCoMM';
+const accessToken = 'BQDVI8f1tz9b1_2NmUjCEbVGhVJrUNsbi79l-v9NyRBWgJ8plS67JrK4FlfjRmxheD2jwP1TAv7QOJWxyUfTClkhXi62ZYeZpnPPdXZdcBy0PkfMm8XHvwY-GN7wOzpjxUJCPOFVKgLUPSGV-wlFSxGm3W6CFFJGyHm1WkVe9AIY2fRm3g6KBjojUr7EIZKdXOY8OKsQLc9pmO05l3cuVgQn9fnBlrHe3tJ3ZgS9CCegX-iiwo_JYu01oNnbUVWM8_fzg6cf8w';
 
 async function fetchWebApi(endpoint, method, token, body, retries = 3) {
   try {
@@ -61,9 +61,10 @@ async function addTracksToPlaylist(playlistId, trackUris, token) {
 async function main() {
   const token = accessToken;
   const bands = [
-    'Pink Floyd', 'Guns N\' Roses', 'Metallica', 'Scorpions', 'Black Sabbath',
-    'The Beatles', 'Lynyrd Skynyrd', 'Justin Timberlake', 'John Mayer',
-    'Iron Maiden', 'Dream Theater'
+    'Cream'
+    // 'Pink Floyd', 'Guns N\' Roses', 'Metallica', 'Scorpions', 'Black Sabbath',
+    // 'The Beatles', 'Lynyrd Skynyrd', 'Justin Timberlake', 'John Mayer',
+    // 'Iron Maiden', 'Dream Theater'
   ];
 
   const userId = (await fetchWebApi('v1/me', 'GET', token)).id;

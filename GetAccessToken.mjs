@@ -4,7 +4,7 @@ import fetch from 'node-fetch';
 const clientId = '995494b1d44e489bade27c3a6917303d';
 const clientSecret = '4f5fecee97984d2ca69a156f9a41c9bd';
 const redirectUri = 'http://127.0.0.1:8888/callback';
-const authorizationCode = 'AQDZRo8V-m8FbtBaf0umwEtIV8EMC7gP6ANQiNU2WTBGTGWOo_ho6NgPNXpepVwC9J9uVmt3UhjZ0LO4EnSL-D-HGIB5xrDHCvLzTKe32ECwQZ7v-cqTqDtNw28vNScpJJHJOYsLc1CRW-vrFddlKRIWBdg5vuAtITyEbTbdisY03LVeDe7i_pFhvKGeKbwU_rTSOOk33jfIiM3VjuNhX9vHi5LbpHimHyFaaSdX5gZjvU7z3hRA7L8ixCnk5OC_eFc'; // Replace with your authorization code
+const authorizationCode = 'AQBVNxmh9kOHn21ShiR_KhvwcuMlmc99KmWL0EgjHfMBvVvDJOuh3uP3KxH5vkYVPttbEpDZx3dTRKupFbItDQNP9hkLo0WEKXPvv4wpsqXdDWSb_duthW15nck_dqDa5dsb47Q8KDzpoto0EWxgPfG--_Dp9ln-r5WDdkmxE1itN4zK4wOufDqQQ1ER6KT9UCHSleUJ_qhLdQXibGs0kyiLFnDQnhC1ZwONI7Ew_TDzxFKEhiZ7GRtpHqEvRIc_gGGOBYRA'; // Replace with your authorization code
 
 async function getAccessToken() {
   const res = await fetch('https://accounts.spotify.com/api/token', {

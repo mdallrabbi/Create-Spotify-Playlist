@@ -32,7 +32,7 @@ node server.js
 ```
 3. navigate to the Spotify authorization URL:
 ```plaintext
-'https://accounts.spotify.com/authorize?client_id=<CLIENT_SECRET>&response_type=code&redirect_uri=http://127.0.0.1:8888/callback&scope=playlist-modify-private'
+'https://accounts.spotify.com/authorize?client_id=<CLIENT_ID>&response_type=code&redirect_uri=http://127.0.0.1:8888/callback&scope=playlist-modify-private'
 ```
 3. After authorizing the application, it will be redirected to the callback URL with an authorization code. This code will be logged in the terminal.
 ![From Browser](images/AUTH_CODE_BROWSER.png)
@@ -104,4 +104,16 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
+
+```
+https://accounts.spotify.com/authorize?client_id=995494b1d44e489bade27c3a6917303d&response_type=code&redirect_uri=http://127.0.0.1:8888/callback&scope=playlist-modify-private
+
+https://accounts.spotify.com/authorize?client_id=4f5fecee97984d2ca69a156f9a41c9bd&response_type=code&redirect_uri=http://127.0.0.1:8888/callback&scope=playlist-modify-private
+
+
+https://accounts.spotify.com/authorize?client_id=995494b1d44e489bade27c3a6917303d&response_type=code&redirect_uri=http://127.0.0.1:8888/callback&scope=playlist-modify-private
+
+
+https://accounts.spotify.com/authorize?response_type=code&client_id=995494b1d44e489bade27c3a6917303d&scope=user-library-read%20playlist-modify-public%20playlist-modify-private&redirect_uri=http://127.0.0.1:8888/callback
 ```
